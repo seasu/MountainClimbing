@@ -76,9 +76,9 @@
 
       mountains.each(function(oneMountain) {
           console.log(oneMountain.get("title"));
-          //var item = new mountainLi({model: oneMountain});
-          //console.log(item.el);
-          //$("#mountain-list").append(item.el);
+          var item = new mountainLi({model: oneMountain});
+          console.log(item.el);
+          $("#mountain-list").append(item.el);
           //this.$("#mountain-list").append(item.render().el);
       });
 
