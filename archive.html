@@ -76,9 +76,9 @@
 
       mountains.each(function(oneMountain) {
           console.log(oneMountain.get("title"));
-          var item = new mountainLi({model: oneMountain});
-          console.log(item.el);
-          $("#mountain-list").append(item.el);
+          //var item = new mountainLi({model: oneMountain});
+          //console.log(item.el);
+          //$("#mountain-list").append(item.el);
           //this.$("#mountain-list").append(item.render().el);
       });
 
@@ -138,7 +138,6 @@
     <footer class="footer">
       <p class="pull-right"><a href="#">Back to top</a></p>
     </footer>
-              <!--<img class="thumbnailImageFillWidth" src="<%= image %>" alt="">-->
 </div>
 
   <!-- Templates -->
@@ -146,7 +145,7 @@
   <script type="text/template" id="mountain-item-template">
       <li class="span12 liButtonMargin5">
         <div class="thumbnail">
-
+          <img class="thumbnailImageFillWidth" src="<%= image %>" alt="">
           <div class="caption">
             <h2><%= sequence %><%= title %></h2>
             <p><%= intro %></p>
